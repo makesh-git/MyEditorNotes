@@ -1,0 +1,262 @@
+* top
+	- to view the task manager of OS.
+	press s - to change refreshing time..
+	press i - to view only running process..
+	press k - to kill the process( enter pid to kill)
+____________
+
+* kill
+	- to kill the processs.
+	* kill pid_of_process
+		to know pid-> pidof processname( pidof firefox)
+	* kill -KILL pid_of_process ( for force killing)
+	* kill -9 pid_of_process ( also for force killing)
+
+	- use *top to view all running process
+	- use ps -ux also
+	- 	  ps -U user_name( to view process running by 			particular user)
+	- use ps -C process_name ( to view all  runing 	
+		instances)
+_________________________________
+
+* echo
+	- creating a variable
+	* myVar="Makesh" ( no spaces btwn eql sign)
+	* echo $myVar ( to view the value f var)
+
+	( variable is valid only on that session)
+
+
+	* echo -e 'some \text'( it will print some    ext)
+	  \t is tab space( to enable  escape seq use -e)
+
+_______________________________________
+
+* chmod
+       - to change the file/dir permission
+
+       * --- --- --- -> rxx ->read write execute
+         (U) (G) (O) -> user  - group - other
+
+       * to add permision
+       		chmod u+r ( u - user , + add , r read)
+       		chmod g-x ( g - group , - remove , x execute)
+
+       	chmod a rwx ( a- all)
+       	chmod ug=rwx( for user&group- all permision)
+
+* Permision using Octal numbers
+      
+       U 	 G 	     O
+      rwx 	rwx 	rwx
+      111   111     111
+
+      001   111     110
+      421	421		421
+
+      1		7		6
+
+      chmod 176 <=> chmod u+x
+
+ ______________
+
+ * which & whatis
+ 	* which - gives full path of the command(file) located
+ 		which ls =>bin/ls
+ 		(its good to use full path of command in script )
+ 	whatis - gives short desc of command
+ 		 what cp => it is used to copy..
+ ________________
+
+* user add 	
+		 sudo useradd kumar -m -s /bin/bash -g users -c "my comment"
+
+		  (	-m -> to create default home directory
+		   	-s -> allow to use shell,
+		  	-g ->assign user to group users
+		  )
+
+* remove user
+		sudo userdel -r kumar 
+		(
+		-r -> also to delete the user frm home dir
+		)
+
+
+
+* groups
+    
+    * group - shows the list of group current user is asigned
+
+    - to view all available groups
+    * cat /etc/group
+
+    - to add new group
+    * sudo grouadd group_name
+
+    - to delete group
+    * sudo groupdel group_name
+
+    - to assign a user to group
+    * sudo gpasswd -a user_name group_name
+
+   	- to remove a user from group
+   	* sudo gpasswd -d user_name group_name
+
+ ________________
+
+ bashrc 
+ 	- it is the script file which is executed when a new session is stated..
+
+ SOME USEFUL COMMANDS
+  - df -> disk spaces
+  	df -h ( h for getting data in human readable form..)
+  - du -> space used by file/dir
+  	du -h / du -sh ( s for geting only size )
+  - free -> shows used,availabele,cached space
+  	free -m
+
+  - watch -> to excute a command at certain intervl of time
+  * watch -n 1 free -m ( n for time interval in seconds)
+
+
+  head -> to show first 10 lines of file
+  	* head -n3 fileName
+  tail -> to show last no  of lines
+  	* tail -n3 fileName
+
+  * tail -f failName
+  	( f-> follow,it waits there and print lines if gets changed)
+
+  [ heads & tails are mostly used to view log files]
+
+
+  - find - to find the files in directory
+  * find /home/makesh -name fileName.txt
+  ( also we can use wildcards for file name)
+
+  * find /home/makesh -mtime -2
+  	( it gives al files that created 2 days ago)
+---------------------------
+  - wc -> to find no of words/ char in file
+  	* wc file.txt
+  	=> 5 32 210
+  	( 5 lines, 32 words, 210 char)
+
+ ---------------
+
+ cal -> to show calendar
+ 	* cal
+ 	* ncal
+ 	* cal 2016
+ 	* cal 2 2016 ( 2nd month)
+ 	* cal -3 ( lst 3 months)
+----------------------
+
+date - to dispaly/ change date
+	* date
+	* date -s give_date_time_in_string
+	* date +%h ( format date )
+
+-------------------------
+
+; && || - to execute multiple commands at same time..
+	* pwd ; ls
+	* pwd && ls
+
+	; -> executes next cmd if one command fails..
+	&& -> wont execute next commad if one cmd fails..
+
+	* pwd || ls
+	if first one is sucess - wont go next..
+	if first one fails, go to other until get sucess..
+	( like logical OR operator)
+
+-------------------
+
+* apt-get 
+		- apt -> advanced packaging tool ( for debian 
+			based os)
+
+		* apt-get update -> update packages in
+				(/etc/apt/sources.list)
+
+		To install
+		* apt-get install java
+
+		To remove
+		* apt-get remove java ( to remove progrm without configs)
+
+		* apt-get remove  --purge java ( it removes configs also)
+
+		* apt-get autoremove (remove packages that are not used or no longer used..)
+
+-----------------------------------
+
+* ifconfig 
+		- to show the availabe interfaces 
+
+		* ifconfig eth0 up - to enable netwrk conectivty
+		* ifconfig eth0 down - to disable
+------------------------------
+
+* tar
+		to compress the folder into tar format
+
+		* tar -cvf test.tar test
+		    test.tar (file name u want to make tar file)
+		    test ( folder whcih u want to compress)
+
+		 to decompress
+		 * tar -xvf test.tar
+
+---------------------------------------------------
+
+* grep
+		- Global Regular Expression Print
+		- to search pattern
+
+		* grep "pattern" fileName
+		* grep -i "patter" fileName ( -i case insenstv)
+		* grep -n "pattern" fileName (-n line num)
+		* grep -n "also lines" fileName
+
+		* grep -n "pattern" fileName1 fileName2 ( multi files)
+
+		* grep -n "pattern" * ( all files in curent folder)
+
+		* grep -v "pattern" fileName(  -n invert)
+		file which not contains "patter"
+----------------------------------------------
+
+to change the ssh port
+	 * sudo nano /etc/ssh/sshd_config
+
+scp - secure copy
+* scp source_file dest_userName@ip:/dest_path_to_store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

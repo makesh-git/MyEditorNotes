@@ -1,0 +1,75 @@
+
+Spring framework in java makes build enterprse application easy
+it has the features of depe
+Dependency Injection helps to achieve inversion of control (IOC)
+
+It helps to achieve loose coupling
+(  one obj doesnt depends on other)
+
+* if you want to test particular part of progrm( in tight coupling its not possible)
+
+create a bean for a class,(in xml file,- spring container)
+so call the bean that will give you the object
+
+BEAN DEFINITION CAN BE DONE IN 3 WAYS:
+
+1-xml configuration
+2-Annotation based coonfigs
+3-Java based configs
+
+
+2-ANNOTATION BASED CONFIG
+
+ * in xml file, mention that we are using annotation based configs and the base package ( to search for bean)
+ * annoante @Component above the class tat we want to create a bean
+ * use the class itslef directly( in applicationcontext.getBean("") - non-qualified/deCapitalized name)
+ 
+  @Component - creates a bean for the class
+  @Autowired - checks for the bean of this type and if its found assign here
+  
+  instead of xml, we can create a java class and annotate it @Configuration and @CompnentScan(basePackage="com.cc") to scan fr bean
+ 
+                _______________________________________________________________________
+ 
+***********************************************         Spring MVC  **********************************************************
+
+
+
+client req -> web.xml -> dispatcher-servlet(frontContrlr) -> actual controler
+
+ response(jsp View)  <-             dispatcher-servlter  <- sendsData and response(viewName)
+
+
+* in web.xml -> mention the dispatcher servlet which is to be called when req came
+
+ * dispatcher-servlet name should be {someThing}-servlet.xml
+  and mention the basePackage to scan for controller ( class with @Controller annoantion)
+  
+ 
+to replace(web.xml) 
+	as usual to avoid xml files, create a java class with @Configuration and @componentScan(papckg to scan contrller)
+	also @EnableWebMvc if class extends WebMvcConfigurer Adapter
+	
+	
+to replace(dispatcher-servlet)
+    create a class which extends the Abstract Annotation Config Dispatcher servlet Initializer and mention the class (@Controller)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

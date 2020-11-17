@@ -1,0 +1,6 @@
+$ ip address show / ifconfig / ip -a
+	- to ip address
+
+$ lspci
+	- to view hardwares associated with os
+ 

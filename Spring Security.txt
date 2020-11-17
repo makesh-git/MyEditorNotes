@@ -1,0 +1,83 @@
+ * it gives application level security
+ 
+ - username / password authentication
+ - SSO / Okta /LDAP
+ - App level authorization
+ - Intra App  authorization like OAuth
+ - Microservice security ( using tokens, JWT)
+ - Method level security
+ 
+ ************
+ 5-basic concepts
+ 1.) Authentication
+ 2.) Authorization
+ 3.) Principal
+ 4.) Granted Authority
+ 5.) Roles
+ ---
+ 
+Authentication - who are you?
+    - by providing username/password
+	
+Authorization - Are they allowed to do this? 
+
+Principal - Currently logged in user
+
+Granted Authority - 
+
+Roles - Group of authorities 
+    
+ *********************************************************
+ 
+ 
+ # Username/Password authentication
+  - using id&password ..cjeck with database ( userDetailsService)
+  
+  
+ #TOKENS
+ 1.) session tokens  (its like a reference token)
+    save the session id in cookies and pass the id at every req
+	but in modern browsers , uses multiple servers so its hard to save session ( even if we use REDDIS-shared cache service)
+	
+ 2.) JWT - Json Web Tokens (its like a value token)
+ 
+    to overcome the above problem, create one signed token and give it back to user, so everytime user uses this token to authenticate
+	
+
+#OAuth-
+   Authorize one servie withing other
+   giving limited access of one service to another service
+	
+  Key Termonolgy
+  1.Resource - data  which we want to access
+  2.Resource Owner - entity capable of granting access to resource
+  3.Resource Server in which resource is present
+  4.Client - application that needs acess to resource
+  5.Authorization server - serving token
+  
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

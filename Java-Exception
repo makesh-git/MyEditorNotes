@@ -1,0 +1,41 @@
+Exception is the part of program that distrubs the normal flow of program
+types
+1. checked exception
+2. unchecked exception
+
+UN-CHECKED EXCEPTION 
+ - it will be identified during runtime only , not compile time
+ -eg:
+    * Arithmetic exception
+	* Null Pointer exception
+	* ArrayIndex OutofBound exception
+	* NumberFormat Exception
+	
+CHECKED EXCEPTION
+ - it will be identified by compiler itself
+ -eg:
+    * IO exception
+	* Class Not Found exception
+    * No SuchMethod exception
+	* Sql exception
+	
+
+****************************
+
+
+Throws - telling compiler these exception may occur,so you are suppressing those errors
+Throw - to call exception explicitly, forcing to throw the errors
+
+
+
+# try cant't be alone , either it folloed by catch OR finally OR both
+
+
+# try with resource - no need of finnaly to close the resource, it will automaticlay close when it comes out of scope
+
+
+# if you put catch exception first nd followed by other type exception	
+	-unreachable catch block because it is already handled by other catch( that of type exception)
+	
+# Create Own exception
+ - create a class that extends exception , overide super method with the message that you want to print

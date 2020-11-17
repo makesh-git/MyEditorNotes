@@ -1,0 +1,72 @@
+
+* Completed Java Full Stack Certification
+* Java Hacerrank - 1
+
+
+ BACK END
+
+ * Java 8
+ * Spring Boot, Spring Data
+ 		
+ 		- Microservices
+ 		- Docker
+ 		- Jenkins
+ 		- Mongo Db
+
+
+ FRONT END
+
+ * Angular
+ * Html, Css, Javascript
+ 
+ 
+
+ OTHERS
+
+ * Linux with shell scripting
+ 
+ 
+ 
+ 
+ 
+ I was trained in Java J2ee when i joined wipro, and then I was allocated to CISCO project, and here I started 
+ learning Spring frame work , hibernate and enrolled into java full stack program.
+ 
+ so for tat I learned Angular( front end for full stack and for backed end its java ) and in april I successfully
+ completeled my certification
+ 
+ and then santosh allocated me to some automation team in cisco, they are doing automation for cisco service side
+ to get some project experiance I worked with them, they told to learn some automation tools and various..and  
+ 
+ 
+ 
+ 
+ 
+ 
+--------------------------
+
+Angular - data sharing btwn parent and child components..
+
+1.) @Input,( parent to child )
+ 
+ 		parent-<child msg="">
+ 		child - @Input msg;
+
+ 	@ViewChild(child to parent)
+ 		@ViewChlild(child_comp_name)
+
+ 2.)@Output , eventEmitter
+
+ 	emit the event from child, and catch it in parent using @Output
+
+
+______________
+
+Ng Directives
+	it is used to manipulate the dom
+1.) @Component
+2.) @Structural (*ngif, *ngfor .etc)
+3.) @Attribute ( to change the look of a directive .. ngClass, ngStyle)
+4.) @Custom ( we can create our own directives by ng g directive name)
+
+

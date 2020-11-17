@@ -1,0 +1,82 @@
+* ls
+* pwd
+* cd
+________________________
+* cat
+	- to shw the content f the files..
+	* cat -b fname ( to show the file with line numbers only for filled line not fr empty line)
+
+	* cat -n fnme (to add line number for all lines including break lines )
+
+	* cat -s fname (squezzes all blank line into one single blank line)
+
+	* cat -E fname (displasy $ symbl at end of each line)
+
+	* cat > test.txt ( creates a new file if not)
+	    'enter text that u want to add in that file'
+
+	 * cat >> test.txt ( appends the given lines in the file)
+
+	 * cat file1.txt file2.txt > file3.txt (copies contnt f file1 7 file 2 to file 3)
+__________
+
+*mkdir
+	- to create directory..
+	* mkdir aa( creates a new directory)
+	* mkdir -p aa/bb ( to create dir as structure)
+	* mkdir {aa,kk,zzz} (to create multiple dir)
+*rmdir
+	- to remove a directry
+	* rmdir aa ( removes dir)
+	* rmdir -p aa/bb/cc ( removes whole directry structure)
+	(** RMDIR DELETE DIRECTRY ONLY IF IT IS EMPTY)
+	(FOR DIR WITH FILES, USE RM COMMAND TO DELETE)
+
+	* rm -r a/b (or) rm -r a (rm deletes parent dir, so all child dir also get delted automaticaly)
+
+______________________________
+*cp
+	- copy file from source to destintion
+	* cp <source> <dest>
+	* cp -i <source> <dest> (if overiding is possible -i  asks user permision before overiding)
+
+	cp /home/tt.txt . ( . means current directry)
+
+	* cp -R dir1 dir2 ( R - Recursive ., to copy dir to another dir which doesnt exist)
+
+*mv	
+	- move file frm sourec to destination..
+	* mv file1 file2
+
+	use -i ( incase of overiding)
+
+	[moving a_dir to b_dir = b_dir/a_dir] if b_dir exist
+	[                       = b_dir/ (content of  a dir)] if b_dir doesnt exist
+	(it is like renaming of dir)
+_______________________________
+
+*less
+	- to read a file in conveniant manner
+	* less abc.txt
+	up-arr & down arr - to move up & down..
+	space bar - to move next page..
+	(shift+g/G) - to go end of page..
+	enter 1 and (shift+g) - to go top f the page..
+	/text - to search from top..
+	?text - to search from bottom..
+____________________________________
+
+*touch
+	- to create a empty file ( Not dir)
+	* touch fileName
+	if u touch the file that is alredy there, it wil change the timestamp of that file(it is like opening and closing f tat file( last modified time ))
+_________________________________________
+
+* sudo
+	for admin/ root privileages..
+	
+
+
+
+	
+

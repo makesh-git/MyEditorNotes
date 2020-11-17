@@ -1,0 +1,97 @@
+Structure
+	- it is user defined data type
+	- we can group multiple data type at a single name..
+	- store at single block of memory
+	- collection of diffrnt data type
+
+	personPtr->age is equivalent to (*personPtr).age
+
+Union
+	- similar to structire
+	- bt can hold value of one field at a time
+	- max size of field memory is allocated
+
+pointers
+	 variable to store the addrss of another variable
+	 we can  acess fast, by using address , instd of var name
+
+	- int n = 10;   
+	  int* p = &n;
+_________________
+
+REVERSE - SINGLE LINKED LIST 
+
+    if(p->next == NULL){
+        HEAD = p; return;
+    } 
+    reverseList(p->next);
+
+    struct Node *q = p->next;
+    q->next = p;
+    p->next = NULL;
+------------------------------------------------------------------------------------------------
+REVERSE - DOUBLE LINKED LIST
+
+	if(p->next == NULL){ HEAD = p; p->prev = NULL; p->next = NULL; return;}
+	reverse(p->next);
+	struct Node *q = p->next;
+	q->next = p;
+	p->prev = q;
+	p->next = NULL;
+
+________
+
+CIRCULAR QUEUE
+
+void enQueue(int value)
+{
+   if((front == 0 && rear == SIZE - 1) || (front == rear+1))
+      printf("\nCircular Queue is Full! Insertion not possible!!!\n");
+   else{
+      if(rear == SIZE-1 && front != 0)
+	 rear = -1;
+      cQueue[++rear] = value;
+      printf("\nInsertion Success!!!\n");
+      if(front == -1)
+	 front = 0;
+   }
+}
+void deQueue()
+{
+   if(front == -1 && rear == -1)
+      printf("\nCircular Queue is Empty! Deletion is not possible!!!\n");
+   else{
+      printf("\nDeleted element : %d\n",cQueue[front++]);
+      if(front == SIZE)
+	 front = 0;
+      if(front-1 == rear)
+	 front = rear = -1;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Memory management
+	- Heap - at run time, dyynamic memory
+	- Stack - function calls
+	- static/global - variables
+	- code(text)  - instruvtions
+---
+
+malloc - memory allocation
+calloc - continous block of memory
+free - to remove the mem from heap
+realloc - it gives the prviously allocated mem by maloc/ 			caloc( if given mem is not enough)
+

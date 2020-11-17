@@ -1,0 +1,359 @@
+Data structures..
+
+Algorithm
+	- Algorithm is the step by step procedure to execute a function..
+
+	- sequence of statemnts
+
+	- problem -> Algorithm -> Program
+________________________________________
+
+Performance Analysis
+	-  predicting the resources that required for executing
+
+	choosing the best using analysis..
+
+	usualy measure by :
+	1.) Space
+	2.) Time
+__________________________________________
+
+Space Complexity
+	-whenever we execute a program, we need some amount of computer memory to execute, 
+	- to store prgrm instructions,constant , globa values 
+		, functiion call
+
+while calculating space complexity, we dont consider, Ins space .Only  data space.
+
+char - 1 bytes
+Int - 2/4 bytes
+Float - 4 bytes
+double - 8 bytes
+
+_______________________________________________
+
+Time complexity
+	- time required to complete a task..
+____________
+
+Asymptotic Notations
+	we measure the complexity of a process ,we represnt in that in the form of Notatiom
+
+	 - mathematicl representation..
+
+
+	 Three notation :
+	 1.) Big-Oh - ( O )
+	 2.) Big-Omega - ( _()_ )
+	 3.) Big-Theta ( 0 )
+
+Big -Oh
+	- represent  the upper bound value (max time/space needed)
+
+Big-Omega
+	- represent the Lower bound (min time/space)
+Big-Theta
+	- average bound
+_____________________________________________________
+
+DATA STRUCTURE IS THE WAY OF ARRANGING THE DATA EFFECTIVELY, SO THAT ANY OPERATIONS ON THAT CAN BE EASILY DONE ..
+	
+Two types:
+
+1.) Linear Data structures
+2.) Non-Linear Data structures
+
+LINEAR DATA STRUCTURES
+	- data is arranged in sequential manner( linear maner)
+	EX:
+	  Array, Linked list, Stack, Queue
+
+NON LINEAR DATA STRUCTURES
+	- data is arranged in random order
+	EX:
+		Tree, Graph, Dictionaries, Heap, Tries etc..
+______________________________________________________
+
+Linked List
+	Linked list is the linear data structure, where each element has link to its next elemnt in sequence
+
+	- size can grow dynamically..
+
+	- Each element is callend Node
+		( Node has DATA part, NEXT part)
+
+Single Linked List
+	- in sigle linked list, each element has link to its next element in sequence..
+
+
+Address of the first node -> HEAD
+NEXT of last node is always NULL
+
+------
+Circular linked  list
+ - it is same as the normal linked list, but here last node has lin to its first Node
+  NEXT part of last node is HEAD
+---------------
+
+Double Linked List
+ - in double linked linked list every node has link to its previous node and next node in sequence.
+
+ - so that we can traverse back list easily
+
+ ___________________________________________
+
+ Array
+ 	array is type of  data structure which can strore multiple values of same data type..
+
+ _____________________________________
+
+Stack
+	- stack is a linear data structure
+	- where insertion and deletion can be performed at only one end..( TOP of the stac)
+
+	- it follows LIFO priciple..
+
+	element which goes LAST comes FIRST
+
+
+
+
+PUSH - to add elemnt in stack O(1)
+POP -  to remove top elemnt from stack o(1)
+TOP - to display the top most element  o(1)
+
+we can implement stack using
+	- array ( stores only fixed no of values)
+	- linked list ( size is dynamic )
+
+
+_________________________________________________
+
+Expressions 
+	 if we want to perfrm a calculation , we nedd set f symbols ie. Expression
+
+	 Operators +  operands
+
+	 operator - symbol( + - * /)
+	 operand - values
+
+Three Type of Expression:
+	1.) Infix ( a+b )
+	2.) Postfix ( ab+ )
+	3.) Prefix ( +ab )
+
+
+___________________________
+
+Queue
+	- it is linear data structure
+	- insertion and deletion at two diff end
+
+	Insertion at pos called REAR
+	Deleteion at pos called FRONT
+
+	FIFO principles...
+
+
+EnQueue - to add data
+DeQueue - to remove data
+______________________________________________
+
+Tree 
+	- Tree is NON-LINEAR data structure where data is arranged in random order..
+
+	- basically data is arranged in hierarchical order
+
+
+* Tre with N node has N-1 links ( root node dnt hav link)
+
+
+ROOT - first node
+EDGE - connecting btwn two nodes
+PARENT - predecessor of any node 
+CHILD - node which has the parent, descendant of node
+		( Except ROOT ,all nodes are child)
+SIBLINGS- nodes having same parent
+LEAF - node with no child ( terminal node )
+
+INTERNAL NODE - node with atleast  one child
+				( except LEAF all are INTERNL node)
+
+DEGREE - no of children in it have
+
+LEVEL - top to bottom
+
+HEIGHT - Height ( from that node to leaf - downward)
+  		Height of Tree = no of edges in longest path frm root 				 to lea
+		Height of Tree = Height of Root
+		Height of tree with 1 node = 0
+
+
+DEPTH - from that node to root - upward
+
+
+
+PATH -  sequenc of node and edges frm one node to other.
+
+
+__________________________________________
+
+Binary  Tree 
+
+ - tree in which every node has max two childs only
+ ( left chiild & right child)
+
+--
+Strictly Binary Tree
+	- every node has 2 child or no child 
+----
+Complete Binary Tree
+	- A binary tree in which every internal node has exactly two children and all leaf nodes are at same level is called Complete Binary Tre
+
+---
+Extended Binary Tree
+	to make tree as complete/full binry tree.
+	adding dummy nodes
+
+______________________________________
+
+Binary Tree Traversal
+	- traversal means visiting all nodes in a tree
+THree types of traversal
+	1.) In-Order Traversal 
+	2.) Pre-Order Traversal
+	3.) Post-Order Traversal
+
+In-Order
+	 Left - Root - Right
+Pre-Order 
+	Root - Left - Right
+Post-Order
+	Left - Right - Root
+________________________________________________________________________-
+
+Graph
+	Graph is non linear data structure..
+
+	in graph, nodes are connected through vertices
+
+	G =  (V, E)  - collection of vertices and Edges
+
+Undirected Edge - Bidirectional - a<->b
+
+Directed edge - unidirectional edge 
+
+weighed edge - it has value for the edge
+
+Degree - no of edges connected to a vertex
+In degree - no of incoming edges 
+out degree - no of outgoing edges 
+
+-----------------
+
+Graph Representation
+	1.) Adjacency Matrix
+	2.) Incidence Matrix
+	3.) Adjacency List
+
+Adjaceny Matrix
+	- 2D matrix of size ARR[no of vertices ][no  of vertices]
+	arr[v][v]
+
+Incidence Matrix
+	- 2D matrix of size ARR[v][e]
+	0 - not connected
+	1- outgoing edge
+	-1 - incoming edge
+
+Adjacency List 
+	evry vertex has list of adjacency vertex
+
+_________________________________________
+
+Linear Search
+	- time complexity - O(n)
+	in worst case ,have to traverse whole list
+
+Binary Search
+	- time complexity - O(log n)
+
+	for binary search, list should be in sorted order
+
+Hashing
+	- approach to reduce the no of comparison to search
+	a element in data structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+

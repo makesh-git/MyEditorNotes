@@ -1,0 +1,54 @@
+Priority Queue
+	- it is like the normal queue , but every elemnt has
+	priotity,
+	- element with high priority is dequeued first before
+	element with low priority..
+	- if two elements has same priority, then its dequeued in the order of queue..
+
+	Methods:
+		isEmpty(), insert(), findMax(), remove()
+
+Max priority queue & Min Priority Queue
+
+_____________________________________
+
+Heap 
+	- it is the specaial case of balanced binary tree
+	where root node is compared  with  children and arranged accordingly..
+
+	Min-Heap - value of root node is less thn or eql to chhildrn  nodes
+
+	Max-Heap - value of root node is greater than  childeren nodes
+
+_____________
+
+Threaded binary tree
+	in order to avoid using null at the leaf node, linking it  to the some other node is threaded binary tree
+
+	Threaded Binary Tree is also a binary tree in which all left child pointers that are NULL (in Linked list representation) points to its in-order predecessor, and all right child pointers that are NULL (in Linked list representation) points to its in-order successor.
+
+_________________
+
+spannig tree
+	- it is the subgraph of a unidirected where all the vertices will have minimum no of edges ,without missing any vertices
+
+Minimu Spanning tree
+	- sum of weight of edges should be minimum..
+
+TO find minimusm spanning tree,
+	we can is 1.) Prim's algorithm
+			  2.) Kruskal algorithm
+
+		------------
+
+		AVL Insertion Process
+If there is an imbalance in left child of left subtree, then you perform a right rotation.
+ If there is an imbalance in right child of right subtree, then you perform a left rotation.
+  If there is an imbalance in right child of left subtree, then you perform a right-left rotation.
+
+
+
+
+
+
+  

@@ -1,0 +1,299 @@
+netstat -ano|findstr "PID :8080"
+
+taskkill /pid 9392 /f
+
+
+192.168.99.1
+
+http://192.168.99.1:4440/
+
+{
+    "id":100,
+    "bookName":"ABook",
+    "bookAuthor":"AAuthor"
+
+
+}
+
+
+
+
+final String uri = "http://newsapi.org/v2/top-headlines?country=in&category="+category+"&apiKey=072b62dc3937448f97f96d362878e22d";
+	    RestTemplate restTemplate = new RestTemplate();
+	    Object result = restTemplate.getForObject(uri, Object.class);
+
+
+
+
+Ennuninte moideen
+
+kali
+____
+
+
+
+
+
+Makesh Kumar,
+6/134, Pettaikalipalayam,
+Bellampatti(PO),
+Dharapuram(TK),
+Tiruppur-638702
+
+
+Hi,
+
+Really sorry for bothering, 
+
+Actually, I got the billable opportunity in the account that I'm currently working related to my skill set, because of that only I'm expecting shrink from this reservation.
+
+They are asking to get release asap to schedule client discussion, being a fresher I don't want to lose this opportunity., I understood it happens as per the process
+
+Can you please tell me when can I expect release /confirmation from your side.
+
+
+
+
+Hi Sir,
+
+Last week I asked prodosh 
+
+
+I got one opportunity in cisco
+
+yesterday prodosh refered me for one project  in cisco
+and i had interview yesterday and also I was selected
+
+so they said i had to attend client interview for further process, for  that  they want to reserve me in tat proj
+
+
+Bt last week i got a mail that i was reserved for one proj in other acccount..
+
+
+that was happened automaticall, because i was in virtual pool for 1 week right, 
+
+when i ask that reserved manager, he says,that he needs client confirmation to relase me from reservation,
+
+here in cisco, they are saying, try to get realse as soon as possible, so tht they will reserve me in here and i can go for
+client interview.
+
+
+
+
+Currently I was reserved to some other project in another account,
+
+
+*****************
+
+14
+Account Name	METRO BANK PLC
+Project Name	BEM-MBP-PJ-METRO-BANK
+Project Manager	Jyoti Rath
+Delivery Manager	Abhijit Anant Parashare
+
+****************
+13
+ASSIGNMENT DETAILS
+Account Name	THE BANK OF NEW YORK
+Project Name	SEC-TBO-PJ-SPG2020
+Project Manager	Shailesh H Biradar
+Delivery Manager	Viji Thudianparambil Varkey
+
+***************
+11
+Account Name	U.S. BANK
+Project Name	BAM-UBA-PJ-SINGLPOINT-PO
+Project Manager	Santosh Kumar Nair
+Delivery Manager	Pratik Priyankar Patra
+
+***************
+
+10
+Account Name	CHARLES SCHWAB
+Project Name	CMA-CSC-PJ-TDA-EMOSTSAVE
+Project Manager	Seshagiri Krishnamurthy Santhebidanur
+Delivery Manager	Srikanth Bhadragiri
+
+************
+9
+Account Name	LLOYDS BANK
+Project Name	BEM-LTB-MD-FAL-FP-DCS
+Project Manager	Venkatesh R
+Delivery Manager	Ajit Gupta
+
+************
+8
+Account Name	U.S. BANK
+Project Name	BAM-UBA-PJ-MONEYMVMT-DT
+Project Manager	Santosh Kumar Nair
+Delivery Manager	Tushar Sahoo
+
+********
+7
+Account Name	THE HARTFORD
+Project Name	INS-THA-PJ-HF-AM-BI-SUP
+Project Manager	Pradeep Kumar Korambeth
+Delivery Manager	Shashidhara Timmapur
+
+*******
+6
+Account Name	U.S. BANK
+Project Name	BAM-UBA-MD-MTG-SERVICE
+Project Manager	Dhaval Jaykantbhai Sanghvi
+Delivery Manager	Dattaprasad Samant
+
+*************
+5
+Account Name	TD BANK
+Project Name	BAM-TBA-PJ-EETS-SAS-ADM
+Project Manager	Amudha Saravanan
+Delivery Manager	Ramarathnam Dandapan
+
+************
+4
+Account Name	U.S. BANK
+Project Name	BAM-UBA-MD-PYMT-URMA
+Project Manager	Abhijit Dachawar
+Delivery Manager	Tanuja M Dodamani
+
+******************
+3
+Account Name	TESCO
+Project Name	RET-TES-PJ-FIN-FACTORY
+Project Manager	Nishant Bhatnagar
+Delivery Manager	Praveen Mummigatti
+
+
+****************
+2
+Account Name	UBS
+Project Name	SUB-UWA-MD--WAS MIG-WMA
+Project Manager	Atul Kumar
+Delivery Manager	Ravi P Badanahatti
+
+***************
+1
+Account Name	UBS
+Project Name	SUB-UWA-MD-WAS MIG-IBIT
+Project Manager	Parameshwaran Ramanan
+Delivery Manager	Ravi P Badanahatti
+
+******
+
+
+-----RESERVED---
+
+Account Name:UBS
+
+Project Name:SUB-UWA-MD-WAS MIG-IBIT
+
+Project PM Name:Parameshwaran Ramanan
+
+Project DM Name:Ravi P Badanahatti
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+my name is makesh and i'm an engineering graduate, i joined wipro last year,  and I completed my training in Java J2ee and
+post that i was tagged to cisco account
+
+
+and  i have been in cisco account for nealy 1 year, initially i was in trianing 
+project and there I underwent many training related to java and i decided to complete certification of java full stack,
+and i enrolled my self for that and succesfully completed that certification in april,
+
+
+unfortunately , there was no oppurtunity related to java full stack in my account(CISCO)..
+
+at that time, I was assiged to one automation team to assist them in their work, 
+that is Zero Touch Automation, basically we are automating tickets that are related to hour transfer
+
+that is completely based on java-spring boot, and also we are using mongoDb as a database,
+also automation tools like UiPATH to automate web activities, and opensource-workflow builder like node-red
+
+	Java full stack certification included four phases:
+	1 - FED - front end developememt - that complelety for front end ui using angular
+	  there we have to develop one angular app baasically for adding data and retrieveing, updating 
+	  EMPLOYEE MANAGEMENT SYSTEM
+
+	2 - BED1 - back end developememt 1 - that includes to spring framework 
+		CREDIT CARD VALIDATOR
+
+	3 - BED2 - back end developememt 2 - this consist of spring-boot framework
+	   ONLINE ASSESSMENT SYSTEM
+	   
+	   
+
+
+	4 - Capstone - Final project - capstone project the final project that we have to develope using all the skills that
+	   we acquired throughout the program
+	   ONLINE DIET MANAGEMENT SYSTEM
+   
+   
+   
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

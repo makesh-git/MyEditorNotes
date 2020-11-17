@@ -1,0 +1,91 @@
+
+<div class="con">
+
+  <mat-grid-list cols="1" rowHeight="2:1">
+    <mat-grid-tile>
+
+      <mat-card style="width: 100%;">
+
+        <mat-grid-list cols="4" rowHeight="2:1">
+          <mat-grid-tile>
+            <a href="#">
+              <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon> -->
+              <i class="fa fa-facebook" style="font-size: 15px;" aria-hidden="true"></i>
+             </a>
+
+</mat-grid-tile>
+<mat-grid-tile>
+
+  <a href="#">
+    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon> -->
+    <i class="fa fa-whatsapp" style="font-size: 15px;" aria-hidden="true"></i>
+   </a>
+</mat-grid-tile>
+<mat-grid-tile>
+  <a href="#">
+    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon> -->
+    <i class="fa fa-twitter" style="font-size: 15px;" aria-hidden="true"></i>
+   </a>
+
+</mat-grid-tile>
+<mat-grid-tile>
+  <a href="#">
+    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon> -->
+    <i class="fa fa-youtube" style="font-size: 15px;" aria-hidden="true"></i>
+   </a>
+
+</mat-grid-tile>
+</mat-grid-list>
+
+<!--
+        <a href="#">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+
+         </a>
+         &nbsp;&nbsp;
+         <a href="#">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+
+         </a>
+         &nbsp;&nbsp;
+
+         <a href="#">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+
+         </a>
+         &nbsp;&nbsp;
+
+         <a href="#">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+
+         </a>
+         &nbsp;&nbsp; -->
+<!--
+       <a href="#">
+        <i class="fa fa-whatsapp" style="font-size: 20px;" aria-hidden="true"></i>
+       </a>
+       &nbsp;&nbsp;
+       <a href="#">
+
+        <i class="fa fa-facebook" style="font-size: 20px;" aria-hidden="true"></i>
+       </a>
+&nbsp;&nbsp;
+       <a href="#">
+
+        <i class="fa fa-twitter" style="font-size: 20px;" aria-hidden="true"></i>
+       </a>
+       &nbsp;&nbsp;
+       <a href="#">
+
+        <i class="fa fa-youtube" style="font-size: 20px;" aria-hidden="true"></i>
+       </a> -->
+
+
+      </mat-card>
+    </mat-grid-tile>
+
+
+
+
+  </mat-grid-list>
+</div>

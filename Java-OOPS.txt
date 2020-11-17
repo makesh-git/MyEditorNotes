@@ -1,0 +1,101 @@
+
+
+Oops is a general programming pattern that that deals with classes and object instead of methods and logics
+
+Advantages: 
+ - code reusability
+ - simple and easy to understand
+ - easy to find problem
+ -
+ 
+BASIC CONCEPTS
+ - Abstraction
+ - Encapsulation
+ - Polymorphism
+ - Inheritance
+ 
+*************** ABSTRACTION ************************
+- Abstraction is like defining general structure instead of defining whole thing at same place
+- Actual implementation depends upon the user
+
+
+  Abstraction can be acheived in two ways
+  
+ ####### Abstract Class ########
+  class with abstract keyword
+  can have both abstract and non-abstract methods
+  it can't instantiated
+  it can have constriuctor and static/final method also
+  
+  
+  ############# Interface #################
+   decalare using keyword interface
+   only contain abstract methods, ( so no need to use abstract keyword before method)
+   it can't be instantiated
+   can have static / default methods only ( from Java 8 versions) private method( from java 9 versions )
+
+	all data fields are - public static final  ( by default)
+	all methods are - public abstract ( by default)
+	
+	
+	interface can extend multiple interface
+	class can extend one class and implement  multiple interface
+
+
+************** ENCAPSULATION  ***********************
+- Encapsulation is like a wrapping up of data under single unit,
+- its like defining the permission and restriction of data and method of a class
+
+Encapsulation can be acheived by defining the access modifiers to the variables and methods
+ like - Private , Public, Protected, Default
+ 
+ and by defining getters and setters to acesses those restricted variables
+
+
+
+************** POLYMORPHISM *********************
+- In general , acheiving single functionality in multiple ways is polymorphism
+  based on the situation and condition , it will differ
+  
+  * like based of reference variable
+  * based on no of argument to method
+  * based on dataType of argument passed
+  
+  Compile time polymorphism || Method over Loading || Static Binding
+	- in same class ,two methods have same name but differnt in parameters menas ,its method overloading
+	- method gets overloaded based on 
+	  no of parameters, data type of parameters
+	
+  Run time Polymorphism || Method Over riding || Dynamic Binding
+		 - if both sub class and super class has the method with same name means
+		 child method gets over rided while creating the object for child class
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+ ************ INHERITANCE **************************
+ - Inheritance is like acquiring the properties of the parent class,
+  - if a class is extending one class menas, it acess all properties of that extending class
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

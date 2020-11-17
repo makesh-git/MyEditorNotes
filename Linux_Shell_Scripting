@@ -1,0 +1,335 @@
+To craeate a file
+	- touch myScript.sh
+
+Basic Script
+
+	#! /bin/bash
+	echo "hello world...!!!"
+
+To enable executable permission
+	chmod +x myScript.sh
+
+To run script
+	./myScript.sh
+___________________________________________
+
+Commen ts..
+	# - to comment a line
+
+Variables
+ - 1.) system variables ( mostly in Upper case)
+ - 2.) userdefined variables( in lowercase)
+
+ SYSTEM  VARIABLES 
+ 	ex:
+ 	echo $BASH
+ 	echo $BASH_VERSION
+ 	echo $HOME
+ 	echo $PWD
+
+ USERDEFINED VARIABLES
+ 	ex:
+ 	name = makesh
+ 	echo $name
+_________________________________________
+
+To get input from keyboard
+	ex:
+	echo "Please enter your name :"
+	read name
+	echo Entered Name : $name
+
+To get on same line
+	ex:
+	read -p 'Enter Name :' name
+	echo $name
+
+To hide what user is typing( like password)
+	ex:
+	read -sp 'Enter Password :' pass
+	echo $name
+
+To store variables in ARRAY
+	ex:
+	echo 'Enter names :'
+	read -a names
+	echo ${names[0]}
+
+REPLY VARIABLE ( if var name is not mentioned ..)
+	echo 'enter name :'
+	read
+	echo 'name : ' $REPLY 
+
+_______________________________
+
+Passing an argument while running a script
+	ex:
+	echo $1 $2 $3
+
+	( $1 -> catches first arg passed )
+	($0 - always contains name of script )
+Passing arg as ARRAY
+	ex:
+
+	arrayName=("$@")
+	echo ${arrayName[1]}   || echo $@ ( prints all arg passed)
+
+	echo $# ( gives no of args passed in arr)
+
+______________________________________
+
+if else
+	ex:
+
+	num = 5
+	if ($num -eq 5)
+	then
+		echo "its true"
+	else
+		echo "its false"
+	fi
+
+	integer comparison:
+	[= -eq],[!= -neq],[> -gt],[>= ge] ,[< lt],[<= le]
+
+	string comparison:
+	[ = ,comapring two string]
+	[!=],[<,> for checking alphabetical]
+	[-z , string is null, zero length ] 
+	(fi -> end of if statement)
+
+elif
+ if
+ then 
+ 	echo
+ elif
+ then
+ 	echo
+ else
+ then 
+ 	echo
+ fi
+
+___________________________
+
+file test opertor
+	
+	echo -e  "enter file name : \c"
+	(\c -> to keep cursor on same line)
+
+	
+	-e -> file found or not
+	-f -> file found & its regular file or not
+
+	-c -> for character special file ( normal text file)
+	-b -> for block special file  ( image /video)
+
+	-s -> file is empty or not
+
+	-r -> file has read perm(||ly to w and x)
+
+	-d -> directory found or not
+________________________________________
+
+AND operator
+ 
+ && (or) -a
+
+ age = 10
+ if [ $age -gt 5 ] && [ $age -lt 15 ]
+ 		(or)
+ if [ $age -gt 5 -a $age -lt 15 ]
+ 		(or)
+if [[ $age -gt 5  &&  $age -lt 15 ]]
+
+OR Operator
+
+		similar to AND
+_________________
+
+Aritmatic operation
+	ex:
+
+	num1 = 20
+	num2 = 5
+
+	echo $(( num1 + num2 ))
+
+	echo $( expr $num1 + $num2 ) - not wrks fr multiply,
+	echo $( expr $num1 /* $num2 )
+
+( *** this wont work for decimal number *** )
+
+Arithmatic Operation for Decimal numbers..
+
+	ex:
+
+	echo "20.5+1" | bc
+	echo " scale=2;20.5/5.5" | bc
+		( scale -> decimal points )
+
+	num1 = 20
+	num2 = 5
+	echo "$num1+$num2" | bc
+
+To calculate complex maths calcs..
+
+	Sqr root
+	echo "scale=2; sqrt($num1)" | bc -l
+	 (l fr calling mats)
+
+_________________________________
+
+Case 
+	-alternate for complex if else
+
+	veh=$1
+
+	case $veh in
+		"car" )
+			echo "THIS IS CAR" ;;
+		"bike" )
+			echo "THIS IS BIKE" ;;
+		* )
+			echo "UNKNOWN ;;
+	esac
+
+	(* -> default)
+
+___________________
+Array
+
+arr=('aa' 'bb' 'cc')
+echo "${arr[@]}"  -> it prints all value in arr
+echo "${arr[1]}"  ->it prints item of given index in arr
+echo "${!arr[@]}"  -> it prints all index num in arr
+echo "${#arr[@]}"  -> it prints length arr
+
+To add element
+	arr[1]='value'
+
+To remove element
+	unset arr[1]
+
+_______________________
+LOOP
+
+to print 1 to 10
+
+n=1
+while(( $n <= 10))
+do
+	echo "$n"
+	((n++))
+	sleep 1
+done
+
+( sleep -> to get delay betwn each iteration)
+
+Read file using while loop
+
+while read p
+do
+	echo "$p"
+done < hello.sh
+
+	(or)
+
+cat hello.sh | while read p
+do
+	echo "$p"
+done
+
+	(or)
+USING IFS - Internal Field Separator
+
+while IFS=' ' read -r line
+do
+	echo "$line"
+done < hello.sh
+
+UNTILL
+	 similar to while but opposite 
+	 while iterates if cond is true..
+	 untill iterates if cond is false..
+
+________________________
+
+
+for loop
+	ex:
+
+	for i in {1..10..2}
+	do
+		echo $i
+	done
+
+	1->start value, 10-> end value, 2 - incremnt by 2
+
+	(or)
+
+	for(( i=0; i<5; i++))
+	do
+		echo $i
+	done
+	----
+_____________________________
+
+Select
+ select num in 1 2 3 4
+ do
+ 	echo $num is selected
+done
+______________
+
+Functions
+
+
+	function print(){
+	echo "Print fun called"
+	echo $1
+	}
+
+print hello  
+( hello ->is the arg, $1 in print fun captures this fir arg)
+
+
+*** usually variables inside fun is global,
+	to make it local -> local var
+
+____________
+
+Readonly
+	var a=10
+	readonly a
+________________
+
+Trap
+	$$ -> to print the pid of script
+
+	Trap is used to catch and perform some action if the script execution is stopped manually or due to some reasons..
+
+	ex:
+	trap "Hey, Exit signal is detected" SIGINT
+	while(i=10)
+	do
+	done
+
+	[*** SIGINT is the signal name, like CTRL+C]
+_______________
+
+Debugging
+	 
+	 #!/bin/bash -x 
+	 	( it starts debuging when script runs)
+	 (OR)
+
+	 set -x         (start debuging frm here)
+	     commands
+	 set +x          ( stop debugging )
+
+	 (OR)
+
+	 while exceuting script file..
+
+	  bash -x ./hello.sh

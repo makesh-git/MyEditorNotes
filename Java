@@ -1,0 +1,205 @@
+Java is
+	- high level language,
+	- Object Oriented,
+	- Highly Secured
+
+Features
+	- Object Oriented
+	- Platform Independent
+	- Interepted
+
+----------------
+Java is a platform indepented, unlike C, it has to compiiled based on the Operating system,
+but java is like, write once run anywhere
+----------------------------------
+
+Java is secured becoz, its dont have pointers(no way to access memorry externally)
+It runs inside virtual machine sandbox
+( C runs directly above OS, uses OS runtime env,)
+( in Java, it has own runtime)
+---------------------------------------------------------
+
+CompileTime | source code(.java file) --> bytecode(.class file) 
+RunTime     | .classFile --> classLoader --> byteCodeVerifier --> interpretr --> runTime -->hardware
+------------------------------------------
+
+( JDK -> JRE -> JVM )
+Jvm - its the virtual machine and it only executes the byteCode( it just need byte code to execute)
+Jre - it contains the runtime environment for running the java code( it contains the libraries required for executing java)
+Jdk - it is the kind of software kit that contains all development tools(like Jre, Jvm ) for Java execution
+-------------------------------------
+
+
+Object Oriented Programming - it is the methadology to design a program using classes and object
+it makes program easier to understand and develop
+--
+Object - it is the state/behaviour of some thing
+Class - collection of object which is of same 
+
+(Animal - class )
+(Dog    - object)
+(Baring - method)
+
+--
+Inheritance - acquiring properties of parent class
+    ( it enhance code reusability)
+	- single inheritance
+	- multi level inheritance
+	
+
+Polymorphism
+   - 
+
+
+
+___________
+
+Static 
+  keyword - if we decalare a variable using static,memory will be iniatilaized only , so it retails
+            it value aftr every call 
+
+ method - static method is the one which directly belongs to class instead of object of class  
+           we can access static method without creating object of class
+
+           it can also access the static variable of the class
+
+     * static method cant use non-static varibale or non-static method directly
+     * this and super cant be used in static
+
+block - static block in c is called before main method, it will be called when class is loaded into JVM 
+
+				----------------------
+				
+Super - super keyword is used to call the parent constructor(default constructor)
+        by defauld - every method will call super class constructor
+		
+	  - super is also used to access the super class method or variable by manually
+                 ----------------------------
+				 
+
+
+Final 
+  keyword - if we declare a var as final, it is constant, value cant be changed once assigned
+  method - if method is final, we cant overide it
+  class - if class is final, you cant extend that class
+  
+  
+		---------------
+		
+this - this key word is used to match the local instantce with global instantce
+
+--------------------
+
+Anonymous Object - 
+	- anonymous object will not take any space in stack memory, we can directly access from the heap 
+	(eg: Dog d = new Dog(); d.bark(); -> d -> will stored in stac ; new Dog ->created on heap
+	(     new Dog().bark(); -
+
+------------------------------------
+Static Binding - if a type of object is known at compile time, that is static binding 
+  eg : int a, Dog d = new Dog();
+
+Dynamic Binding - if type of object is known at runtime, that is dynamic binding 
+   eg : Animal a = new Dog();
+
+------------------------
+
+
+Abstaraction - hiding the implementation and showing only functionalities
+	it can be done in two ways
+	* Abstract Class
+	* Interface 
+
+Abstract Class 
+   - Abstract Class cant be instantiated, we have to extend and use the methods
+   - it can have both abstract and non abstract methods
+   - it can have constructors, final, static methods
+     * Abstract Method - it only have method declaration( eg: public void add(); )
+
+
+
+Interface
+  - it provides bluePrint
+  - by Default all fields are final and static
+  - by Default all methods are abstrat and static
+
+  - we can acheive multiple inheritance using Interfaces
+
+
+Encapsulation
+  - wrapping up all data under single block, so that block only have access to modify data
+  - using getter and setter with all data members as private  ( make class read only and write only)
+
+ - it is the feature , that wont allow to directly access variables of class,
+ 
+
+
+
+
+
+Wrapper Class
+  - in java mostly we deal with objects, so in such case we neeed objects instead of primitive data
+  - AutoBoxing  -> conversion of Primitive to Wrapper class
+                    int a = 10;
+                    Integer A = a; (or) Integer A = Integer.ValueOf(a);
+  - Unboxing    ->  conversion of Wrapper Class to Primitive data
+  					Integer A = 10;
+  					int a = A (or) int a = A.intValue();
+  --------*********************************************************************************************--------------
+  
+  
+  
+  COLLECTIONS
+  
+ * collection is a framework in java thats allows to store and process  objects 
+ -> List
+ -> Set
+ -> Map
+ 
+        List                           ||    Set                                  || Map
+ 
+ * it allows duplicate values          || * it wont allow duplicate               || * it wont allow dupl key but values
+ * it allows many null values          || * only one null value                   || * one one null key
+ * it maintains order                  || * wont maintain order                   || * wont maintain order
+ 
+  ArrayList-internaly uses array(slow) || TreeSet gives values in sorted order    || TreeMap gives sorted order
+ LinkkedList-uses doubly linked list   || Hash Set -not sorted,not ordered,        || TreeMap-cant have null key but values
+									       null elemnt allowed
+									                                              || HashMap-single null key,multipl null val,
+																				        doesnt maintain any order
+									    
+									    
+									 
+ 
+ 
+ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ Java - 8
+ 
+ 1- lambada expressin - creating a function without any name, 
+ 2- method referance - ::
+ 3- functional referance - ::
+ 4- interface - can have default and static methods
+ 5- stream API - to do a process in parellel manner( instead waiting for other steps to complete
+                    its starts next process once its done
+					long count = names.stream().filter(str->str.length()<6).count();
+ 
+ 6- ForEach -   fruits.forEach(str->System.out.println(str));
+ 
+ 7- StringJoiner - to join mre strings by having some delimeter charcter in between them
+ 8- Optional class - to avoid null pointer exception , if it is null, it retrurns alternate data, dnt need to check
+ 9- Parallel sorting - uses divide & conqr concept, uses multiple threads , effecient sorted
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

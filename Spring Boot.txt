@@ -1,0 +1,28 @@
+In spring, we have to concentrate more on configuration part,
+
+spring boot gives production ready deployemnt project,
+all basic configuration will be done by spring boot itself
+
+it have tomcat embedded with it
+********************************************
+
+                                           BEAN SCOPE
+singleton bean -> 
+	bean will be created when application started and returns the same instatce everytime we call
+   object will be created only once
+  
+Prototye bean ->
+     bean will not be created unless we call,
+	 will create new instancce of  bean everytime we call
+	 
+	 ***********************************************************
+	 
+	 @Component -  to create bean
+	 @Autowired - to use that bean inside other class
+	 
+	 
+@Configuration - to mention this class contains some beans
+( those beans will be singleton)
+
+
+@Controller - tells the dispatcher servlet 
